@@ -1,0 +1,24 @@
+#txtCounter{
+    text-align: right;
+    padding-left: 20%;
+    font-size: 20px;
+}
+button {
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    background-color: green;
+    color: honeydew;
+    
+}
+button:hover {
+    background-color: greenyellow;
+    color: grey;
+  
+}
+h3 {
+    font-size: 35px;
+    color: red;
+    text-align: left;
+    padding-left: 10%;
+}
