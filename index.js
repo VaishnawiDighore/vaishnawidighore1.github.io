@@ -1,23 +1,22 @@
-function decrease() {
-  var first = document.getElementById("txtCounter").value;
-  if (isNaN(first)) {
-    alert("Please enter a valid number");
-  } else {
-    first--;
-    document.getElementById("txtCounter").value = first;
-  }
+// Use insert() function to insert the number in textview.
+function insert(num) 
+{
+document.form1.textview.value = document.form1.textview.value + num;
 }
 
-function reset() {
-  document.getElementById("txtCounter").value = "0";
+// Use equal() function to return the result based on passed values.
+function equal()
+{
+var exp = document.form1.textview.value;
+if(exp)
+{
+document.form1.textview.value = eval(exp)
+}
 }
 
-function increase() {
-  var second = document.getElementById("txtCounter").value;
-  if (isNaN(second)) {
-    alert("Please enter a valid number");
-  } else {
-    second++;
-    document.getElementById("txtCounter").value = second;
-  }
+/* Here, we create a backspace() function to remove the number at the end of the numeric series in textview. */
+function backspace()
+{
+var exp = document.form1.textview.value;
+document.form1.textview.value = exp.substring(0, exp.length - 1); /* remove the element from total length ? 1 */
 }
